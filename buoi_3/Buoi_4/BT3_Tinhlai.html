@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let loan, year, interest
+        loan = parseInt(prompt("Nhap so tien vay"));
+        interest = parseInt(prompt("Nhap lai suat dang %"));
+        year = parseInt(prompt("Nhap so nam"));
+        firstLoan = loan * (interest / 100)
+        totalLoan = loan + year * firstLoan
+        document.write("So tien vay phai tra: ", totalLoan)
+
+    </script>
+</body>
+</html>
