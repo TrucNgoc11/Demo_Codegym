@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        year = prompt("Please enter year")
+        month = prompt("Please enter month")
+        date = prompt("Please enter day")
+        var d = new Date()
+        d.setDate(date)
+        d.setFullYear(year)
+        d.setMonth(month)
+        document.write(date + " - " + month + " - " + year);
+        document.write(d);
+    </script>
+</body>
+</html>
