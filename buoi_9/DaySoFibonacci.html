@@ -15,7 +15,12 @@
 
     while(i <= number) {
         nextNum = n1 + n2;
-        document.writeln(nextNum + ",");
+        if (i == number) {
+            document.writeln(nextNum + ".");
+        } else {
+            document.writeln(nextNum + ",");
+        }
+        
         n1 = n2;
         n2 = nextNum;
         i++;
