@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>BT1 Khoi tao mang 10 Phan tu</h2>
+    <p>Hien thi co bao nhieu phan tu lon hon hoac bang 10</p>
+    
+    <script>
+        var list1 = new Array()
+        var cnt = 0
+        for (var i = 1; i <= 10; i++){
+            list1.push(parseInt(prompt("Nhap vap phan tu trong mang")))
+         if (list1[i - 1] >= 10){
+                cnt ++
+            }
+        }
+            document.writeln("Chuoi da nhap: " + list1)
+            document.write(" Ket qua la: " + cnt)
+        
+    </script>
+</body>
+</html>
