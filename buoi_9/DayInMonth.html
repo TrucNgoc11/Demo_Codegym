@@ -7,33 +7,32 @@
 </head>
 <body>
     <input type="text" id="dauvao">
-    <button onclick="Tinhsongay()">Tinh So Ngay</button>
+    <button onclick="Tinhsongay();">Tinh So Ngay</button>
     <script>
-        let inputD = document.getElementById("dauvao").value 
-        switch (inputD) {
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-            printf("\nThang %d co 31 ngay", inputD);
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                    alert("\nThang %d co 30 ngay", inputD);
-            case 2:
-                    if(nam % 400 == 0 || (nam % 100 != 0 && nam % 4 == 0))
-                    {
-                            alert("\nThang %d co 29 ngay", i);
-                    }
-                    else 
-                    {
-                            alert("\nThang %d co 28 ngay", i);
-                    }
+        let myDay= document.getElementById("dauvao").value;
+        function Tinhsongay(){
+            switch (parseInt(myDay)){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    alert("Thang " + myDay + " co 31 ngay");
+                    break
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    alert("Thang " + myDay+ " co 30 ngay");
+                    break
+                default:
+                    alert(myDay)
+                    break
             }
+
+        }
     </script>
 </body>
 </html>
