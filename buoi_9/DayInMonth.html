@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="dauvao">
+    <button onclick="Tinhsongay()">Tinh So Ngay</button>
+    <script>
+        let inputD = document.getElementById("dauvao").value 
+        switch (inputD) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+            printf("\nThang %d co 31 ngay", inputD);
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                    alert("\nThang %d co 30 ngay", inputD);
+            case 2:
+                    if(nam % 400 == 0 || (nam % 100 != 0 && nam % 4 == 0))
+                    {
+                            alert("\nThang %d co 29 ngay", i);
+                    }
+                    else 
+                    {
+                            alert("\nThang %d co 28 ngay", i);
+                    }
+            }
+    </script>
+</body>
+</html>
