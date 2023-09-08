@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count = 1
+        let number1 = 2
+        let total = 0
+
+        while (count <= 20){
+            let check = false
+            for (let i = 2; i < number1; i++){
+                if (number1 % i === 0) {
+                    true
+                    break
+                }
+            }
+            if (!check) {
+                count++
+                console.log(number1)
+                total += number1
+            }
+            number1++
+        }
+        console.log("-------------------");
+        console.log("Tong 20 so nguyen to dau tien " + total);
+        console.log("--------------------");
+
+    </script>
+</body>
+</html>
